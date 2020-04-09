@@ -19,6 +19,7 @@ var inputElement = d3.select("#datetime");
 button.on("click", function () {
     var inputValue = inputElement.property("value");
     var filteredData = UFOData.filter(UFOData => UFOData.datetime === inputValue);
+    if (filteredData.length == 0) filteredData = UFOData;
     tbody.selectAll("tr").remove();
     filteredData.forEach((UFO) => {
         var row = tbody.append("tr");
