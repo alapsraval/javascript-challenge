@@ -61,9 +61,13 @@ body {
   padding: 0;
 }
 
-.filters {
-  margin-top: 10px;
+.filters .panel-heading {
+  font-size: 1.5rem;
 }
+
+/* .filters {
+  margin-top: 10px;
+} */
 
 select {
   display: block;
